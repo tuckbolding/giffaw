@@ -7,7 +7,7 @@ $("form").on("submit", function(e) {
 
 var giphy_api = "http://api.giphy.com/v1/gifs/search?";
 
-		// function getAndRenderGifs() {
+		
 		  $.ajax({
 		    method: "GET",
 		    url: giphy_api,
@@ -15,7 +15,7 @@ var giphy_api = "http://api.giphy.com/v1/gifs/search?";
 		    success: onSuccess,
 		    error: onError
 		  });
-		// }
+		
 
 
 		function onSuccess(json) {
@@ -29,7 +29,7 @@ var giphy_api = "http://api.giphy.com/v1/gifs/search?";
 			console.log("Status: " + status);
 			console.dir(xhr);
 		}
-// getAndRenderGifs();
+
 });
 });	
 		
